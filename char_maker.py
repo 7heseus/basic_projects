@@ -37,9 +37,7 @@ class Character:
                        False, False, False, False, False, 
                        False, False, False ,False, False, 
                        False, False, False]
-    
-    # using property decorator
-    # a getter function
+
     @property
     def proficiency(self):
         return level_prof_dict[self.char_level]   
@@ -90,8 +88,6 @@ my_char.race = prompt_array('Choose a race', race_list)
 my_char.char_class = prompt_array('Choose a class', class_list)
 my_char.char_alignment = prompt_array('Choose your alignment', align_list)
 my_char.char_level = int(input("Enter your level: "))
-
- 
 
 print('Enter a value for your base stats (1-20)')
 my_char.set_stats()
